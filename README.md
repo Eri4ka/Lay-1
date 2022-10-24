@@ -5,7 +5,7 @@
 ![alt](./images/mob.jpg)
 
 ### Desktop
-![alt](./images/desk.jpg)
+![alt](./images/desktop.jpg)
 
 ### Доп1
 Кнопка "ещё..." при нажатии на которую будут раскрываться скрытые времена.
