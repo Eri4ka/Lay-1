@@ -1,8 +1,6 @@
 .card {
     width: 100%;
     margin-bottom: 30px;
-    border: 0.3px solid #828282;
-    border-radius: 16px;
 
     &-picture {
         position: relative;
@@ -10,6 +8,11 @@
         &__content {
             width: 100%;
         }
+    }
+
+    &-wrapper {
+        border: 0.3px solid #828282;
+        border-radius: 0 0 16px 16px;
     }
 
     &-content {
@@ -119,8 +122,6 @@
         display: flex;
         max-width: 1106px;
         margin: 0 auto 59px auto;
-        border-radius: 15px;
-        border: 0.5px solid #8E8E8E;
 
         &-picture {
             max-width: 473px;
@@ -129,6 +130,11 @@
             &__content {
                 height: 100%;
             }
+        }
+
+        &-wrapper {
+            border-radius: 0 15px 15px 0;
+            border: 0.5px solid #8E8E8E; 
         }
 
         &-top {
