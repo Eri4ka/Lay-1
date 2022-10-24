@@ -1,0 +1,34 @@
+include ../button/button
+include ../price/price
+include ../badge/badge
+
+- var n = 0;
+
+mixin card(img, img2, clazz, cost, text, badge, badgeClazz, count)
+    .card
+        .card-picture
+            picture.card-picture__picture
+                source(srcset= img2 media="screen and (min-width: 576px)")
+                img(src= img).card-picture__content
+                +badge(badge, badgeClazz)
+        .card-wrapper
+            .card-content
+                .card-top
+                    .card-time
+                        .card-time__svg
+                            +svgsprite('time')
+                        span.card-time__text 2 часа
+                    h3.card__head АКЦИЯ - Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2019
+                .card__info
+                    ul.card__list 
+                        li.card__item Билет на целый день
+                        li.card__item Неограниченное число катаний
+                        li.card__item 6 остановок у главных достопримечательностей
+                        li.card__item Ближайший рейс сегодня
+                            .time
+                                ul.time__list
+                                    each time in count
+                                        +time(time)
+            .card-about
+                +price(cost, text)
+                +button(clazz)

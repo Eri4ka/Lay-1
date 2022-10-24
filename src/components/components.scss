@@ -1,0 +1,14 @@
+@import './card/card';
+@import './button/button';
+@import './price/price';
+@import './badge/badge';
+
+.main {
+    padding: 27px 18px 0 16px;
+}
+
+@media screen and (min-width: 576px) {
+    .main {
+        padding: 67px 30px;
+    }
+}

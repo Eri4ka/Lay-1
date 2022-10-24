@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap&subset=cyrillic');
+
+body {
+    font-family: 'Open sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@import './helpers/varaibles';
+@import './helpers/sprite';
+
+@import '../components/components';

@@ -1,0 +1,23 @@
+include ./helpers/svgsprite
+include ./helpers/time
+include ../../components/card/card
+
+
+- var pic1 = "./img/stpt.png"
+- var pic1xl = "./img/stptxl.png"
+- var pic2 = "./img/stpt2.png"
+- var pic2xl = "./img/stpt2xl.png"
+- var music = "./img/music.png"
+
+html
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet'  href='css/style.min.css')
+    body
+        main.main
+            +card(pic1, pic1xl, "", "900 ₽", "1200 р на причале", "новинка", "badge_yellow", ['12:00', '12:00', '12:00', '12:00'])
+            +card(pic2, pic2xl, " button-long", "2900 ₽", "", "новинка", "badge_purple", ['12:00', '12:00', '12:00', '12:00'])
+            +card(pic1, music, "", "900 ₽", "1200 р на причале", "", "", ['12:00', '12:00', '12:00', '12:00', '12:00', '12:00'])
+        script(src='js/app.min.js') 

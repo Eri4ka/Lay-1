@@ -1,0 +1,44 @@
+.badge {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &_yellow {
+        background-color: $yellow-mobile;
+        color: $badge-black;
+        font-size: 12px;
+        left: 0;
+        top: 40px;
+        padding: 9px 22px 9px 16px;
+    }
+
+    &_purple {
+        background-color: $badge-purple;
+        color: #FFFFFF;
+        font-size: 14px;
+        border-radius: 15px 0px 12px;
+        top: 0px;
+        padding: 12px 32px 12px 27px;
+    }
+
+    &_blue {
+        background-color: $badge-blue;
+        color: #FFFFFF;
+        font-size: 16px;
+        top: 47px;
+        padding: 12px 38px 8px 36px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .badge {
+        
+        &_yellow {
+            background-color: $badge-yellow;
+            color: #323232;
+            font-size: 16px;
+            top: 60px;
+            padding: 13px 31px 10px 34px;
+        }
+    }
+}
